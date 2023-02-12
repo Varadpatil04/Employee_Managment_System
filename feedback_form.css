@@ -1,0 +1,79 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+body{
+    box-sizing: border-box;
+    background: url('feedbackpage.jpg') no-repeat fixed;
+    animation: move 10s ease-in-out alternate-reverse infinite ; 
+    
+    background-size: 100%;
+}
+@keyframes move{
+    100%{
+        background-position: 20%;
+    }
+}
+div.main{
+    width: 400px;
+    margin: 100px auto 0px auto;
+}
+h2{
+    text-align: center;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+div.feedback{
+    width: 425px;
+    height: min-content;
+    position: left;
+    padding: 30px;
+    background: rgb(255, 255, 255);
+    text-align: left;
+    border-radius: 25px;
+    box-shadow:0 0 10px rgba(0, 0,0, .2);
+   
+}
+div.q1-form{
+    padding: 2px;
+}
+div.q2-form{
+    padding: 2px;
+}
+div.q3-form{
+    padding: 2px;
+}
+div.q4-form{
+    padding: 2px;
+}
+div.q5-form{
+    padding: 2px;
+}
+div.q6-form{
+    padding: 2px;
+}
+div.q7-form{
+    padding: 2px;
+}
+div.q8-form{
+    padding: 2px;
+}
+
+form input[type="submit"]{
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+    border-radius: 2px;
+    font-size: 22px;
+    margin-top: 28px;
+    color: rgb(rgb(88, 79, 79));
+    background-color: rgb(167, 162, 162);
+}
+form input[type="submit"]:hover{
+    color:black;
+}
+form textarea[col="53"]{
+    border-radius: 2px;
+
+}

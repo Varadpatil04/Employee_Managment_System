@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('wallpaperbetter.com_1920x1080.jpg');
+    animation: move 20s ease-in-out alternate-reverse infinite;
+    background-position: center;
+}
+@keyframes move{
+    50%{
+        background-position: 100%;
+    }
+}
+
+.menu-bar {
+    /* background-color: rgba(135, 207, 235, 0.37); */
+    text-align: right;
+}
+
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+
+.menu-bar ul li {
+    width: 100px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* .active, */
+.menu-bar ul li:hover {
+    background-color: rgba(89, 177, 172, 0.384);
+    border-radius: 2px;
+}
+
+.sub_subject {
+    display: none;
+}
+
+.menu-bar ul li:hover .sub_subject {
+    display: block;
+    position: absolute;
+    background-color: rgba(135, 207, 235, 0.37);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub_subject ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .sub_subject ul li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: dotted white;
+    background-color: transparent;
+    text-align: left;
+    border-radius: 0;
+}
+
+.menu-bar ul li:hover .sub_subject ul li:last-child {
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub_subject ul li a:hover {
+    color: pink;
+}
+
+.Sub_sub {
+    display: none;
+}
+
+.King:hover .Sub_sub {
+    display: block;
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 140px;
+    background-color: rgba(135, 207, 235, 0.37);
+}
+
+.Content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+
+.Content h1 {
+    font-size: 60px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 70px;
+}
+
+.Content p {
+    margin: 20px auto;
+    line-height: 25px;
+
+}
+
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span {
+    background: #009688;
+    height: 25px;
+    width: 0%;
+    border-radius: 100%;
+    position: relative;
+    left: 0%;
+    bottom: 0%;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span  {
+    width: 70%;
+}
+
+button:hover {
+    border: cornflowerblue;
+    background: #009688;
+    transition-duration:ease-in 0.3s ;
+}
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    height: 50px;
+    
+}

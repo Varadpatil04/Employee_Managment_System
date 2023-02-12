@@ -1,0 +1,42 @@
+body{
+    background-image: url('homepage.jpg');
+    background-size: cover;
+   
+
+}
+/* For 3 in a row  */
+.container{
+    display: flex;
+    justify-content: center space-around;
+    align-items: center;    
+    flex-wrap: wrap;
+    width: 85%;
+    margin-left:auto;
+    margin-top:80px;
+}
+/* for 2 in a row  */
+/* .container{
+    display: flex;
+    justify-content: center space-around;
+    align-items: center;    
+    flex-wrap: wrap;
+    width: 75%;
+    margin-left:auto;
+    margin-top:50px;
+} */
+
+
+
+
+.box{
+    width: 280px;
+    height: auto;
+    background-color: rgba(255, 252, 252, 0.801);
+    margin: 20px;
+    padding: 30px;
+    border-radius: 25px;
+    opacity: 0.85;
+    
+}
+
+
